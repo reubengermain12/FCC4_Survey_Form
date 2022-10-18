@@ -15,39 +15,153 @@
       software development. Thank you for participating.
     </p>
     <form id="survey-form">
-      <label id="name-label" for="name">Name</label>
-      <input id="name" type="text" required placeholder="Enter your name" />
-      <label id="email-label" for="email">Email</label>
-      <input id="email" type="email" required placeholder="Enter your Email" />
-      <label id="number-label" for="number">Age</label>
-      <input id="number" type="number" min="8" max="120" placeholder="Age" />
-      <select name="dropdown" id="dropdown">
-        <option value="">Student</option>
-        <option value="">Full Time Job</option>
-        <option value="">Part Time Job</option>
-        <option value="">Unemployed</option>
-        <option value="">Other</option>
-        <option value="">Prefer Not To Say</option>
-      </select>
-      <input type="radio" value="yes" name="user-recommend" />
-      <input type="radio" value="no" name="user-recommend" />
-      <input type="checkbox" value="HTML" />HTML
-      <input type="checkbox" value="CSS" />CSS
-      <input type="checkbox" value="JavaScript" />JavaScript
-      <input type="checkbox" value="Python" />Python
-      <input type="checkbox" value="Java" />Java
-      <input type="checkbox" value="C++" />C++
-      <input type="checkbox" value="C#" />C#
-      <input type="checkbox" value="PHP" />PHP
-      <input type="checkbox" value="TypeScript" />Typescript
-      <input type="checkbox" value="React" />React
-      <textarea
-        id="comments"
-        class="input-textarea"
-        name="comment"
-        placeholder="Enter your comment here..."
-      ></textarea>
-      <button type="submit" id="submit" class="submit-button">Submit</button>
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          class="form-control"
+          id="name"
+          type="text"
+          required
+          placeholder="Enter your name"
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          class="form-control"
+          id="email"
+          type="email"
+          required
+          placeholder="Enter your Email"
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input
+          class="form-control"
+          id="number"
+          type="number"
+          min="8"
+          max="120"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>Which option best describes your current role?</p>
+        <select name="dropdown" id="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="part-time-job">Part Time Job</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="other">Other</option>
+          <option value="prefer not to say">Prefer Not To Say</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you recommed learning a Software Development language</p>
+        <input type="radio" value="yes" name="user-recommend" />
+        <input type="radio" value="no" name="user-recommend" />
+        <input type="radio" value="maybe" name="user-recommend" />
+      </div>
+      <div class="form-group">
+        <p>
+          What Languages would you be interested in?
+          <span class="clue">(check all that apply)</span>
+        </p>
+        <label>
+          <input
+            class="input-checkbox"
+            name="prefer"
+            type="checkbox"
+            value="html"
+          />HTML
+        </label>
+        <label>
+          <input
+            class="input-checkbox"
+            name="prefer"
+            type="checkbox"
+            value="css"
+          />CSS
+        </label>
+        <label>
+          <input
+            class="input-checkbox"
+            name="prefer"
+            type="checkbox"
+            value="javascript"
+          />JavaScript
+        </label>
+        <label>
+          <input
+            class="input-checkbox"
+            name="prefer"
+            type="checkbox"
+            value="python"
+          />Python
+        </label>
+        <label>
+          <input
+            class="input-checkbox"
+            name="prefer"
+            type="checkbox"
+            value="java"
+          />Java
+        </label>
+        <label>
+          <input
+            class="input-checkbox"
+            name="prefer"
+            type="checkbox"
+            value="c++"
+          />C++
+        </label>
+        <label>
+          <input
+            class="input-checkbox"
+            name="prefer"
+            type="checkbox"
+            value="c#"
+          />C#
+        </label>
+        <label>
+          <input
+            class="input-checkbox"
+            name="prefer"
+            type="checkbox"
+            value="php"
+          />PHP
+        </label>
+        <label>
+          <input
+            class="input-checkbox"
+            name="prefer"
+            type="checkbox"
+            value="typescript"
+          />Typescript
+        </label>
+        <label>
+          <input
+            class="input-checkbox"
+            name="prefer"
+            type="checkbox"
+            value="react"
+          />React
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
     </form>
   </body>
 </html>
